@@ -1803,7 +1803,7 @@ with gr.Blocks(theme='gradio/base', title="Kanoyo", css=css) as app:
             ''')
     if config.iscolab:
         app.queue(concurrency_count=511, max_size=1022).launch(
-            share=True,
+            share=False,
             server_port=config.listen_port,
             favicon_path="./assets/favicon.ico",
         )
